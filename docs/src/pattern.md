@@ -166,7 +166,9 @@ conn.gsql('''
 results = conn.gsql('CREATE GRAPH HazardAhead(Visitor, Ride, FoodCourt, rides, eats, accompanied)')
 ```
 
-![Graph 1](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/docs/assets/images/graph1.png?raw=true)
+![Graph 1](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph1.png?raw=true)
+
+
 
 #### Loading Data
 
@@ -192,13 +194,14 @@ LOAD file1 TO VERTEX Galaxy accompanied ($0, $1,,....) USING header="true", sepa
 
 results = conn.gsql('RUN LOADING JOB HazardAhead_PATH USING file1="sampleData/visitor.csv", "sampleData/ride.csv", ...)
 ```
-![Graph 2](https://github.com/AmitXShukla/P2P.ai/blob/main/docs/assets/images/graph2.png?raw=true)
+![Graph 2](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph2.png?raw=true)
 
-![Graph 3](https://github.com/AmitXShukla/P2P.ai/blob/main/docs/assets/images/graph3.png?raw=true)
+![Graph 3](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph3.png?raw=true)
 
-![Graph 4](https://github.com/AmitXShukla/P2P.ai/blob/main/docs/assets/images/graph4.png?raw=true)
+![Graph 4](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph4.png?raw=true)
 
 ---
+
 ## Gathering Visitor, Food Supply and other data
 
 ---
