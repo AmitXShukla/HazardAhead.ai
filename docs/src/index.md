@@ -1,8 +1,13 @@
 ## HazardAhead.ai
 
-This book is about Data Science, Graph Analysis to understand, how something like toilet paper is sold as gold during Pandemic. In next few chapters, we will use data science technologies to understand, predict and perhaps prevent global supply chain shortages specially for those items which every person needs to survive.
+**Predicting danger, crime, distractions, hazards before it happens.** Ability to predict danger, hazards and distractions in advance before they do any damage is no longer a distant fantasy. Subject of surveillance has shown world new ways of predicting hazards ahead.
 
----
+This book is about Data Science, Graph Analysis to understand data pattern in crowd gatherings, making use of climate, supply chain, behavior archives of criminological data to understand what causes hazards. HazardAhead.ai demonstrates how to construct predictive algorithms to aid in the search for hazardous, danger, distractions and criminal activity.
+
+One great aspect of hazards is, it Work in Mathematical Ways.
+
+This notebook is dedicated to show examples, that using different technologies together, how a Hazard can be predicted well in advance, so that preventive actions can be taken.
+
 ## about Author
 !!! info
 
@@ -10,19 +15,19 @@ This book is about Data Science, Graph Analysis to understand, how something lik
 
     **Bio:** [about me](https://github.com/AmitXShukla)
 
-    **Last Update Date:** Apr 04 2022
+    **Last Update Date:** Apr 18 2022
 
-    **Who should read this:** small, medium, large ERP Consultants
+    **Who should read this:** IT developers, Healthcare, law enforcement agencies, Event management authorities
 
     **Version:** 0.22
 
     **Sponsorship:** open for funding
 
-[![GitHub](assets/images/github.png)](https://github.com/AmitXShukla)
-[![YouTube](assets/images/youtube.png)](http://youtube.com/AmitShukla_AI)
-[![Twitter](assets/images/twitter.png)](http://twitter.com/ashuklax)
-[![LinkedIn](assets/images/linkedin.png)](https://www.linkedin.com/in/ashuklax)
-[![Medium](assets/images/medium.png)](https://medium.com/@amit-shukla)
+[![GitHub](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/github.png?raw=true)](https://github.com/AmitXShukla)
+[![YouTube](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/youtube.png?raw=true)](http://youtube.com/AmitShukla_AI)
+[![Twitter](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/twitter.png?raw=true)](http://twitter.com/ashuklax)
+[![LinkedIn](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/linkedin.png?raw=true)](https://www.linkedin.com/in/ashuklax)
+[![Medium](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/medium.png?raw=true)](https://medium.com/@amit-shukla)
 
 ---
 
@@ -32,7 +37,7 @@ This book first version is completely free(v1.2) and is published as website und
 Most of the source code is MIT License, (except few ML/Deep Learning algorithms, which are proprietary and customer owned content).
 
 Complete source code can be found here.
-[https://github.com/AmitXShukla/P2P.ai](https://github.com/AmitXShukla/P2P.ai)
+[https://github.com/AmitXShukla/HazardAhead.ai](https://github.com/AmitXShukla/HazardAhead.ai)
 
 ---
 
@@ -40,25 +45,21 @@ Complete source code can be found here.
 
     **Platform:** TigerGraph, Oracle OCI, AWS, Google or Microsoft Azure data cloud.
 
+    **Data:** Internet of things, vision, ocr, supply chain ERP systems
+
     **Analytics:** Jupyter NBs, Julia Pluto notebooks, TigerGraph GSQL, Power BI, Tableau, Oracle Analytics Cloud or Kibana
 
-    **Programming/Framework:** Python, Julia, FluxML, TigerGraph GSQL, TigerGraph ML
+    **Programming/Framework:** Julia, FluxML, TigerGraph GSQL, TigerGraph ML
 
 ---
-## Procure2Pay.ai
 
-Procure to Pay Julia package provide a **unified Analytics platform** to support data analytical operations on all sort of Procurement, Accounts Payable, Procurement including Vendor, Use, Freight, Misc Tax Accruals data to address complete Buy to Pay data wrangling operations.
+Hazards are everywhere, and often completely unpredictable. But recent advancements in AI, ML Models, Scientific Neural network deep learning methods and advance use of mathematics like calculus enabled us to use these technologies learn design and data pattern which can be used to analyze, visualize, and further train machine learning models to predict certain events.
 
-This package will provide a complete Analytic Software package, which can be deployed as a bolt-on or independent application for all data extract, load, transformation, ad-hoc reporting & Analytics, visualizations and tooling to support Data Science, AI, ML predictive Analytics.
+When I think about **Impact** using Graph technologies, I'm sure, these technologies will be able to make meaningful predictions which are useful to crowd/event management and is very helpful to the places and people who want to use Graph technologies in event management.
 
-This package is intended for small, medium, large and very Big Organizations who require a Big Data Tools which can ELT i.e. Extract very large amount of structured and unstructured data, load data into a uniform platform such as RDBMS, Hadoop Data Lake or non-SQL environment.
+I have seen researcher using Graph technologies to predict supply chain in retail industry. Graph technologies are certainly useful, where events depends entity and their relationship, like Power Industries or healthcare industry. However, I have not seen much applications of using Graph in Law n Order, Hazard, Crowd/Event management area.
 
-Further, advance data transformation wrangling techniques can be applied to prepare data for operations reporting, data analytic, advance data visualizations, data science operations including AI, ML for predictions.
-
-This package also show case reporting, visualizations to support real time, live reporting on all mobile, web devices. 
-
-
----
+HazardAhead.ai uses extremely complex graph and data algorithms. This is lot of work to first identify, design solution pattern, gathering meaningful data. Cleaning and Wrangling huge amount of variety of data formats for different data sources. 
 
 ## Table of Contents
 
@@ -66,22 +67,17 @@ This package also show case reporting, visualizations to support real time, live
 Pages = [
 	"index.md"
     "define.md"
-    "path.md"
+    "pattern.md"
     "process.md"
-    "facts.md"
-    "graph.md"
-    "query.md"
-    "analytics.md"
+    "iot.md"
     "ml.md"
+    "usecase.md"
     "api.md"
 ]
 ```
 
----
+# License Agreement
+https://raw.githubusercontent.com/AmitXShukla/P2P.ai/main/LICENSE
 
-!!! note "ERP Systems"
-
-    P2P.jl package supports these ERP systems data structures.
-
-    Oracle, PeopleSoft, SAP, Tally, Intuit, QuickBooks etc.
-    I will cover examples from ERP Domains like GL (General Ledger), AP (Accounts Payable), AR (Account Receivables), B2P (Buy to Pay), Expense, Travel & Time, HCM Human Capital Management, CRM etc.
+# Privacy Policy
+https://raw.githubusercontent.com/AmitXShukla/P2P.ai/main/LICENSE
