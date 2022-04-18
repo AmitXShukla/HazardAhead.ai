@@ -51,7 +51,7 @@ please start here to learn about solution:-> [https://amitxshukla.github.io/Haza
 ----
 
 # License Agreement
-https://raw.githubusercontent.com/AmitXShukla/P2P.ai/main/LICENSE
+https://raw.githubusercontent.com/AmitXShukla/HazardAhead.ai/main/LICENSE
 
 # Privacy Policy
-https://raw.githubusercontent.com/AmitXShukla/P2P.ai/main/LICENSE
+https://raw.githubusercontent.com/AmitXShukla/HazardAhead.ai/main/LICENSE

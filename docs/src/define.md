@@ -2,23 +2,46 @@
 
 Religion, sports, social gatherings are one of those things, which bring people together, spread joy and love.
 
-Imagine sight of thousands of people taking bath at Holy Ganges. 
+---
+*Imagine sight of thousands of people taking bath at Holy Ganges.*
+![Holy Ganges](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/kumbhmela.png?raw=true)
 
-Celebrating Dussehra together. Dussehra is the festival that marks the victory of good over evil.
+*Celebrating Dussehra together. The festival that marks the victory of good over evil.*
+![Dussehra](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/dussera.png?raw=true)
 
-and so is sports, being at Lakers game, watching Croatia, France Final in 2018, even though I never visited either of these countries.
+*so is sports, being at Lakers game.*
+![Dussehra](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/lakers.png?raw=true)
+
+*watching Croatia, France Final in 2018, even though I never visited either of these countries.*
+![Dussehra](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/soccer.png?raw=true)
 
 Being at Theme park or concert Or just simply having a barbecue or watching movie with friends & family.
 
-But
+---
+**HOWEVER...**
 
-sometime, being together can be a nightmare.
+sometimes, being together can be a nightmare ...
 
-Covid gathering
-Dussehra train accident
-soccer riot
-stampage vaishnav desi
+---
 
+![RailTrack](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/railtracks_clip1.png?raw=true)
+
+![RailTrack](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/railtracks_clip2.png?raw=true)
+
+![RailTrack](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/railtracks.png?raw=true)
+
+![RailTrack](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/railtracks_clip3.png?raw=true)
+
+---
+
+![RailTrack](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/gathering1.png?raw=true)
+
+![RailTrack](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/gathering2.png?raw=true)
+
+---
+![RailTrack](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/vaishnav_devi_stampade.png?raw=true)
+
+---
 
 **Introducing HazardAhead.ai**
 

@@ -6,10 +6,10 @@ makedocs(sitename="HazardAhead.ai",
         "Introduction" => "index.md"
         "Define Problem" => "define.md"
         "Design Pattern" => "pattern.md"
-        "Data Points" => "process.md"
         "IOTs" => "iot.md"
-        "AI/ML Predictions" => "ml.md"
+        "Data Points" => "process.md"
         "Use Cases" => "usecase.md"
+        "AI/ML Predictions" => "ml.md"
         "API" => "api.md"
     ],
 )

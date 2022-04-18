@@ -68,16 +68,16 @@ Pages = [
 	"index.md"
     "define.md"
     "pattern.md"
-    "process.md"
     "iot.md"
-    "ml.md"
+    "process.md"
     "usecase.md"
+    "ml.md"
     "api.md"
 ]
 ```
 
 # License Agreement
-https://raw.githubusercontent.com/AmitXShukla/P2P.ai/main/LICENSE
+[https://raw.githubusercontent.com/AmitXShukla/HazardAhead.ai/main/LICENSE](https://raw.githubusercontent.com/AmitXShukla/HazardAhead.ai/main/LICENSE)
 
 # Privacy Policy
-https://raw.githubusercontent.com/AmitXShukla/P2P.ai/main/LICENSE
+[https://raw.githubusercontent.com/AmitXShukla/HazardAhead.ai/main/LICENSE](https://raw.githubusercontent.com/AmitXShukla/HazardAhead.ai/main/LICENSE)
