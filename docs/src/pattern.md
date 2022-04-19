@@ -152,22 +152,21 @@ DROP ALL
 
 conn.gsql('''
   USE GLOBAL
-  CREATE VERTEX Visitor (PRIMARY_ID id INT, bookDate DATETIME, name STRING, phoneNo INT, age INT, gender STRING, checkIn DATETIME, checkOut DATETIME, specialNeeds BOOL, race STRING, price STRING, accompanies INT, family BOOL, localResident BOOL, ADDRESS STRING) WITH primary_id_as_attribute="true"
+  CREATE VERTEX Guest (PRIMARY_ID id INT, bookDate DATETIME, name STRING, phoneNo INT, age INT, gender STRING, checkIn DATETIME, checkOut DATETIME, specialNeeds BOOL, race STRING, price STRING, accompanies INT, family BOOL, localResident BOOL, ADDRESS STRING) WITH primary_id_as_attribute="true"
 
   CREATE VERTEX Ride (PRIMARY_ID id INT, name STRING, indoor BOOL, inlets INT, outlets INT, temperature INT, avgWaitTime INT, popularityRating INT, rideType STRING, rideClass STRING, maturityRating STRING, numExits INT, area INT, numEmployees INT) WITH primary_id_as_attribute="true"
 
   CREATE VERTEX FoodCourt (PRIMARY_ID id INT, name STRING, indoor BOOL, inlets INT, outlets INT, temperature INT, avgWaitTime INT, popularityRating INT, foodType STRING, numExits INT, area INT, numEmployees INT) WITH primary_id_as_attribute="true"
 
-  CREATE DIRECTED EDGE rides (From Visitor, To Ride, rideTime DATETIME)
-  CREATE DIRECTED EDGE eats (From Visitor, To FoodCourt, eatTime DATETIME)
-  CREATE UNDIRECTED EDGE accompanied (From Visitor, To Visitor)
+  CREATE DIRECTED EDGE rides (From Guest, To Ride, rideTime DATETIME)
+  CREATE DIRECTED EDGE eats (From Guest, To FoodCourt, eatTime DATETIME)
+  CREATE UNDIRECTED EDGE accompanied (From Guest, To Guest)
 
 ''')
-results = conn.gsql('CREATE GRAPH HazardAhead(Visitor, Ride, FoodCourt, rides, eats, accompanied)')
+results = conn.gsql('CREATE GRAPH HazardAhead(Guest, Ride, FoodCourt, rides, eats, accompanied)')
 ```
 
 ![Graph 1](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph1.png?raw=true)
-
 
 
 #### Loading Data
@@ -306,3 +305,12 @@ first(weatherDF, 5)
 
 ---
 ## Analyzing patterns
+
+
+![Graph 1](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph_pattern1.png?raw=true)
+
+![Graph 2](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph_pattern2.png?raw=true)
+
+![Graph 3](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph_pattern3.png?raw=true)
+
+![Graph 4](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph_pattern4.png?raw=true)
