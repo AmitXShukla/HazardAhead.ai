@@ -177,7 +177,7 @@ conn.gsql('''
 USE GLOBAL
 USE GRAPH HazardAhead
 CREATE LOADING JOB HazardAhead_PATH FOR GRAPH HazardAhead {
-DEFINE FILENAME file1 = "sampleData/visitor.csv";
+DEFINE FILENAME file1 = "sampleData/visitors.csv";
 DEFINE FILENAME file2 = "sampleData/ride.csv";
 DEFINE FILENAME file3 = "sampleData/foodcourt.csv";
 DEFINE FILENAME file4 = "sampleData/rides.csv";
@@ -188,11 +188,11 @@ LOAD file1 TO VERTEX Ride VALUES ($0, $1,,....) USING header="true", separator="
 LOAD file1 TO VERTEX FoodCourt VALUES ($0, $1,,....) USING header="true", separator=",";
 LOAD file1 TO VERTEX rides VALUES ($0, $1,,....) USING header="true", separator=",";
 LOAD file1 TO VERTEX eats VALUES ($0, $1,,....) USING header="true", separator=",";
-LOAD file1 TO VERTEX Galaxy accompanied ($0, $1,,....) USING header="true", separator=",";
+LOAD file1 TO VERTEX accompanied VALUES ($0, $1,,....) USING header="true", separator=",";
 }
 ''')
 
-results = conn.gsql('RUN LOADING JOB HazardAhead_PATH USING file1="sampleData/visitor.csv", "sampleData/ride.csv", ...)
+results = conn.gsql('RUN LOADING JOB HazardAhead_PATH USING file1="sampleData/visitors.csv", "sampleData/ride.csv", ...)
 ```
 ![Graph 2](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph2.png?raw=true)
 
@@ -204,8 +204,105 @@ results = conn.gsql('RUN LOADING JOB HazardAhead_PATH USING file1="sampleData/vi
 
 ## Gathering Visitor, Food Supply and other data
 
+```@example
+##############################################
+# let's create 1000 visitors in visit register
+##############################################
+using DataFrames, CSV, Dates, Distributions
+sampleSizeVisitor = 1000
+visitorDF = DataFrame(
+    id = 1:1:sampleSizeVisitor, 
+    bookDate = rand(Date("2020-04-01", dateformat"y-m-d"): Day(1): Date("2020-04-10", dateformat"y-m-d"), sampleSizeVisitor),
+    name = "Last First Name M.",
+    phoneNo = rand(1110000000:1:9988800000, sampleSizeVisitor), 
+    age = rand(9:1:78, sampleSizeVisitor), 
+    gender = rand(["Male","Female","Others","NA"], sampleSizeVisitor),
+    checkIn = rand(Date("2020-04-01", dateformat"y-m-d"): Day(1): Date("2020-04-10", dateformat"y-m-d"), sampleSizeVisitor),
+    checkOut = rand(Date("2020-04-01", dateformat"y-m-d"): Day(1): Date("2020-04-10", dateformat"y-m-d"), sampleSizeVisitor),
+    specialNeeds = rand([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1], sampleSizeVisitor), # biased distributions, mostly false
+    race = "na",
+    price = rand(Normal(100, 2), sampleSizeVisitor), 
+    accompanies = rand([1,2,3,4], sampleSizeVisitor),
+    family = rand([0,1], sampleSizeVisitor),
+    localResident = rand([0,1], sampleSizeVisitor),
+    ADDRESS = "Not available",
+    )
+
+first(visitorDF,5)
+```
+
+
+```@example
+##############################################
+# let's create 20 Rides in Park
+##############################################
+using DataFrames, CSV, Dates, Distributions
+sampleSize = 20
+rideDF = DataFrame(
+    id = 1:1:sampleSize, 
+    name = "Joy Ride",
+    indoor = rand([0,1], sampleSize),
+    inlets = rand([1,2,3,4], sampleSize),
+    outlets = rand([1,2,3,4], sampleSize),
+    temperature = rand(64:1:94, sampleSize),
+    avgWaitTime = rand(5:1:110, sampleSize),
+    popularityRating = rand(1:1:10, sampleSize),
+    rideType = rand(["Adult","Teen","Kids", "YoungAdult"], sampleSize),
+    rideClass = rand(["Luxury", "Special"], sampleSize),
+    maturityRating = rand(1:1:10, sampleSize),
+    numExits = rand([1,2,3,4], sampleSize),
+    area = rand(5000:5:15000, sampleSize),
+    numEmployees = rand(1:1:5, sampleSize)
+    )
+
+first(rideDF, 5)
+```
+
+```@example
+##############################################
+# let's create 20 Food Courts in Park
+##############################################
+using DataFrames, CSV, Dates, Distributions
+sampleSize = 20
+foodcourtDF = DataFrame(
+    id = 1:1:sampleSize, 
+    name = "Joy Ride",
+    indoor = rand([0,1], sampleSize),
+    inlets = rand([1,2,3,4], sampleSize),
+    outlets = rand([1,2,3,4], sampleSize),
+    temperature = rand(64:1:94, sampleSize),
+    avgWaitTime = rand(5:1:110, sampleSize),
+    popularityRating = rand(1:1:10, sampleSize),
+    foodType = rand(["Fast","Formal","Snacks"], sampleSize),
+    numExits = rand([1,2,3,4], sampleSize),
+    area = rand(5000:5:15000, sampleSize),
+    numEmployees = rand(1:1:15, sampleSize)
+    )
+
+first(foodcourtDF, 5)
+```
+
 ---
 ## IOTs climate data
+
+```@example
+##############################################
+# let's create weather data
+##############################################
+using DataFrames, CSV, Dates, Distributions
+sampleSize = 365
+weatherDF = DataFrame(
+    cityid = 1:1:sampleSize, 
+    state = rand(["LA","LA","FL"], sampleSize),
+    indoorTemp = rand(64:1:94, sampleSize),
+    outdoorTemp = rand(64:1:94, sampleSize),
+    wind = rand(5:1:30, sampleSize),
+    humidity = rand(30:1:70, sampleSize),
+    precipitation = rand(0:1:5, sampleSize)
+    )
+
+first(weatherDF, 5)
+```
 
 ---
 ## Analyzing patterns
