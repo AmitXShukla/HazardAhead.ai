@@ -37,7 +37,7 @@ conn.gsql('''
 results = conn.gsql('CREATE GRAPH RailTrack(Site, IOT, Person, visiting, climate)')
 ```
 
-![Graph 1](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/usecase1.png?raw=true)
+![Graph 1](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph_usecase1.png?raw=true)
 
 #### Queries
 
@@ -92,7 +92,7 @@ conn.gsql('''
 results = conn.gsql('CREATE GRAPH FestiveGathering(Site, IOT, Person, Market, FoodCourt, visiting, climate, buys, eats)')
 ```
 
-![Graph 2](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/usecase2.png?raw=true)
+![Graph 2](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph_usecase2.png?raw=true)
 
 #### Queries
 
@@ -155,7 +155,7 @@ conn.gsql('''
 results = conn.gsql('CREATE GRAPH ProtestsGathering(Site, IOT, Person, Market, FoodCourt, visiting, climate, buys, eats)')
 ```
 
-![Graph 3](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/usecase3.png?raw=true)
+![Graph 3](https://github.com/AmitXShukla/HazardAhead.ai/blob/main/assets/images/graph_usecase3.png?raw=true)
 
 #### Queries
 
